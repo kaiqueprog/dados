@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="/tabela/css/main.css">
+    <!------ Include the above in your HEAD tag ---------->
+    <title>Senhas wifi</title>
+</head>
+<body>
+        
+    <div class="fluid-container">
+        <div class="row">
+
+            <section class="content">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+
+                            <div class="table-container">
+                                <table class="table table-filter">
+                                    <tbody>
+                                        <tr data-status="pagado">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td><i class='bx bx-copy-alt' onclick="copy('Midia.2020','#copy_button_1')" id="copy_button_1"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">
+                                                            Conexão Quitandinha
+                                                            <span class="pull-right pagado">(PETROPOLIS)</span>
+                                                        </h4>
+                                                        <p class="summary">Midia.2020</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-status="pagado">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td class=""><i class='bx bx-copy-alt' onclick="copy('IMQ.2019.P.JR.NETTEMPLO','#copy_button_2')" id="copy_button_2"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">                                            
+                                                            Metodista templo
+                                                            <span class="pull-right pagado">(PETROPOLIS)</span>
+                                                        </h4>
+                                                        <p class="summary">IMQ.2019.P.JR.NETTEMPLO</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-status="pagado">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td class=""><i class='bx bx-copy-alt' onclick="copy('2407pointup','#copy_button_3')" id="copy_button_3"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">
+                                                            POINT UP
+                                                            <span class="pull-right pagado">(PETROPOLIS)</span>
+                                                        </h4>
+                                                        <p class="summary">2407pointup</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-status="pagado" class="selected">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td class=""><i class='bx bx-copy-alt' onclick="copy('Alex032880','#copy_button_4')" id="copy_button_4"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">
+                                                            Deus
+                                                            <span class="pull-right pagado">(PETROPOLIS)</span>
+                                                        </h4>
+                                                        <p class="summary">Alex032880</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-status="pagado">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td class=""><i class='bx bx-copy-alt' onclick="copy('anatomy2020','#copy_button_5')" id="copy_button_5"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">
+                                                            NET_ANATOMY
+                                                            <span class="pull-right pagado">(PETROPOLIS)</span>
+                                                        </h4>
+                                                        <p class="summary">anatomy2020</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-status="pendiente">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td class=""><i class='bx bx-copy-alt' onclick="copy('246891sa','#copy_button_6')" id="copy_button_6"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">
+                                                            Deus é fiel
+                                                            <span class="pull-right pendiente">(RIO DE JANEIRO)</span>
+                                                        </h4>
+                                                        <p class="summary">246891sa</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-status="pagado">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td class=""><i class='bx bx-copy-alt' onclick="copy('12852010mc','#copy_button_7')" id="copy_button_7"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">
+                                                            EDULENE
+                                                            <span class="pull-right pagado">(PETROPOLIS)</span>
+                                                        </h4>
+                                                        <p class="summary">12852010mc</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-status="pagado">
+                                            <td><i class='bx bx-wifi'></i></td>
+                                            <td class=""><i class='bx bx-copy-alt' onclick="copy('anatomy2020','#copy_button_8')" id="copy_button_8"></i></td>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="title">
+                                                            NET_ANATOMY
+                                                            <span class="pull-right pagado">(PETROPOLIS)</span>
+                                                        </h4>
+                                                        <p class="summary">anatomy2020</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
+

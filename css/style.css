@@ -1,0 +1,60 @@
+:root {
+    --font-family-sans-serif: Open Sans, sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+#myInput {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+#Table thead {
+    background-color: #C3E6CB;
+    text-transform: uppercase;
+}
+
+#Table tbody {
+    border-bottom: 1px solid #CCC;
+}
+
+.tabela{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem; 
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    vertical-align: top;
+}
+
+.table td,
+.table th {
+    font-size: .8125rem;
+    white-space: nowrap;
+}
+tr:last-child td {
+    display: none;
+}
+td:last-child {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para telas menores */
+
+  #Table {
+    width: 100%; /* Faz a tabela ocupar toda a largura da tela */
+    overflow-x: auto; /* Adiciona scroll horizontal se necessário */
+  }
+
+  .tabela {
+    flex-direction: column; /* Muda para coluna para melhor visualização */
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem; /* Reduz o padding para telas menores */
+    font-size: 0.75rem; /* Reduz o tamanho da fonte */
+  }
+}

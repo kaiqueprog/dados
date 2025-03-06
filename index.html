@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dados</title>
+</head>
+
+<body>
+    <div class="search-table">
+        <div class="search-box">
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Pesquisar">
+                </div>
+            </div>
+        </div>
+        <div class="Tabela">
+            <table id="Table" class="table">
+                <thead>
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>Cpf</th>
+                        <th>Idade</th>
+                        <th>Mãe</th>
+                        <th>Endereço</th>
+                        <th>Data de Nascimento</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable"></tbody>
+            </table>
+        </div>
+
+        <script src="js/main.js"></script>
+        <script>
+            importarDados()
+        </script>
+</body>
+
+</html>
